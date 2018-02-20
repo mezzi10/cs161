@@ -1,2 +1,2 @@
-# cs161
-Skill_Scanner
+# CS161 Software Project
+Skill_Scanner App
