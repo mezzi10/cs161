@@ -18,8 +18,7 @@ and open the template in the editor.
 
 
         <?php
-        $java = 0;
-        $c = 0;
+       
         $percentage = 0;
         if (!empty($_FILES['file'])) {
 
