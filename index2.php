@@ -67,6 +67,7 @@ and open the template in the editor.
                     $i++;
                     $file->next();
                 }
+                $percentage = sizeof($have_skill) * 100/sizeof($requ_skills);  
                 echo $percentage;                
             }
         }
