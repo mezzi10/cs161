@@ -1,4 +1,5 @@
 <?php
+
 // $url = 'http:// url of the page we want the content from';
 
 // using file_get_contents function we get the specific content from the page
@@ -20,4 +21,5 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $content = curl_exec($ch);
 echo $content;
 //#output# "write the content we want from the webpage"
+
 ?>
