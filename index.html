@@ -87,7 +87,8 @@ Last Altered 14 March 2018-->
 		<input id="recCheck" type="radio" name="userType" value="recruiter" onclick = "switchView()"> Recruiter
 	</div>
 	<form id = "forSeekers" action="/formscanning.php">
-		<button>Upload Resume</button>
+		<input name="file" type="file"/>
+                <br><br>
 		<label for="Company"><b>Preferred Company</b></label><br>
 		<select name="Company">
 			<option value="noPref">No Preference</option>
