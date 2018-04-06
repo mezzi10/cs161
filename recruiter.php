@@ -10,13 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
-            <input name="file" type="file"/>
-            <button type="submit">submit</button>
-        </form>
-
-
+       
         <?php
        
         $percentage = 0;
