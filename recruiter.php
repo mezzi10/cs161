@@ -46,25 +46,26 @@ and open the template in the editor.
                 function match($keywords, $content) {
                     global $percentage,$have_skill;
                     foreach ($keywords as $keyword) {
-                         if(!in_array($keyword,$have_skill)){  
-                        if (strpos($content, $keyword) !== false ){                  
+                         $pattern = "/$keyword/i";
+                        if(preg_match($pattern, $content, $matches)){ 
+                         if(!in_array($keyword,$have_skill)){                                        
                                 
-                               array_push($have_skill,$keyword);
-                                
-                               $percentage++; 
-                            }
+                               array_push($have_skill,$keyword);                             
+                              
+                            
+                        }
                         }
                     }
                     return false;
                 }
-                $i =0;
+                $keywords = $_POST['skills'];
                 while (!$file->eof()) {
                 
                     $content= fgets($myfile);
                     $content = trim($file->current());
                     match($keywords,$content);
                     
-                    $i++;
+                   
                     $file->next();
                 }
                 $percentage = sizeof($have_skill) * 100/sizeof($requ_skills);  
