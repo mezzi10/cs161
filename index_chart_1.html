@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	axisX:{
+		title: "Candidate's Name"
+	},
+	axisY: {
+		title: "Match Percentage"
+	},
+	data: [{        
+		type: "column",  
+		showInLegend: false, 
+		dataPoints: [      
+			{ y: 85, label: "John" },
+			{ y: 26,  label: "Nick" },
+			{ y: 54,  label: "George" },
+			{ y: 92,  label: "Peter" },
+			{ y: 78,  label: "Justin" },
+			{ y: 65,  label: "Jessica" },
+			{ y: 44,  label: "Jim" },
+			{ y: 39,  label: "Irene" },
+			{ y: 54,  label: "Emily" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
