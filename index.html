@@ -96,6 +96,7 @@ Last Altered 14 March 2018-->
 			<option value="google">Google</option>
 			<option value="apple">Apple</option>
 			<option value="microsoft">Microsoft</option>
+      <option value="microsoft">Amazon</option>
 			<option value="other">Other</option>
 		</select><input type="text" placeholder="Other Company" name="otherC" style="width:auto;"><br>
 		
@@ -132,7 +133,12 @@ Last Altered 14 March 2018-->
                     <option>NodeJS</option>
                     <option>Github</option>
                     <option>Bitbucket</option>
-                    
+                    <option>MySQL</option>
+                    <option>Scheme</option>
+                    <option>Perl</option>
+                    <option>Ruby</option>
+                    <option>Lisp</option>
+                    <option>BASIC</option>
                 </select><br>	  
 	
 
@@ -148,11 +154,8 @@ Last Altered 8 March 2018-->
 <script>
 // Get the modal
 var modal = document.getElementById('login');
-
 // Get the modal
 var modal2 = document.getElementById('register');
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -162,8 +165,6 @@ window.onclick = function(event) {
 		modal2.style.display = "none";
 	}
 }
-
-
 //Added 8 March 2018
 function switchView(){
 	var seek = document.getElementById('seekCheck');
@@ -176,11 +177,7 @@ function switchView(){
 		document.getElementById('forSeekers').style.display = "none";
 		document.getElementById('forRecruiters').style.display = "block";
 	}
-
 }
-
-
-
 </script>
 
 </body>
