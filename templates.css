@@ -73,6 +73,7 @@ Last Altered 28 Feb */
 	padding: 10px 10px;
 	border-radius: 10px;
 	margin: 10px;
+        height: 800px;
 	
 	
 }
@@ -118,7 +119,7 @@ span.psw {
 Last Altered 28 Feb */
  
 .modal {
-    display: none; /* Hidden by default */
+   /*display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -128,7 +129,7 @@ Last Altered 28 Feb */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    /*padding-top: 30px;*/
 }
 
 /* Modal Content/Box - Holds the content
@@ -184,4 +185,53 @@ Last Altered 28 Feb */
     .cancelbtn {
        width: 100%;
     }
+}
+
+.skills{
+    padding: 2px;
+    /*width:40px;*/
+    float: right;
+}
+.frontend_skills{
+    
+    display: inline-block;
+    width:160px;
+}
+.backend_skills{
+    
+    display: inline-block;    
+    width:160px;
+    float:right;
+    margin-left:4%;
+     
+     /*clear: right;*/
+}
+.software_skills{
+      margin-left:4%;
+     display: inline-block;    
+     width:160px;
+     float:right;
+     
+}
+.skill{
+    width:700px;
+    margin-left: 20%;
+}
+.line{
+    height:2px;
+    width: 100%;
+    color: black;
+    border: 2px red;
+    background-color: white;
+    
+}
+.split{
+    display: inline-block; 
+     
+    float:right;
+    height:20%;
+    width: 2px;
+    color: black;
+    border: 2px red;
+    background-color: white;
 }
